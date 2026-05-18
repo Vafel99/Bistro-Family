@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:api.anthropic.com)",
+      "Bash(cp \"/Users/lukaszwojdowicz/.claude/projects/-Users-lukaszwojdowicz-Documents-Bistro-Family/a683b736-30f3-4bb0-b141-efcb7b92b339/tool-results/webfetch-1779127768075-n75zcc.bin\" /tmp/design.gz)",
+      "Bash(gunzip -f /tmp/design.gz)",
+      "Read(//tmp/**)",
+      "Bash(mkdir -p /tmp/design_extracted)",
+      "Bash(tar -xf /tmp/design -C /tmp/design_extracted)",
+      "Bash(mkdir -p \"/Users/lukaszwojdowicz/Documents/Bistro Family/assets\" && cp /tmp/design_extracted/bistro-family/project/assets/logo.jpg \"/Users/lukaszwojdowicz/Documents/Bistro Family/assets/logo.jpg\" && ls \"/Users/lukaszwojdowicz/Documents/Bistro Family/\")"
+    ],
+    "additionalDirectories": [
+      "/private/tmp/design_extracted/bistro-family/project/assets"
+    ]
+  }
+}

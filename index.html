@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bistro Family — domowe obiady w Zielonej Górze</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ── TOPBAR ── -->
+<div class="topbar">
+  <div class="row">
+    <div class="pills">
+      <span class="pill">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        Pon–Pt 12:00–17:00
+      </span>
+      <span class="pill hide-sm">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        ul. Wyszyńskiego 18 · pasaż E.Leclerc
+      </span>
+    </div>
+    <div class="pills">
+      <a class="pill" href="tel:+48666083363">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        +48 666 083 363
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ── HEADER ── -->
+<header class="site">
+  <div class="container">
+    <div class="nav">
+      <a class="brand" href="#top">
+        <img src="assets/logo.jpg" alt="Bistro Family" class="brand-logo" />
+        <div class="brand-name">
+          <span class="b1">bistro family</span>
+          <span class="b2">Domowe obiady · Zielona Góra</span>
+        </div>
+      </a>
+      <nav class="main-nav" id="primaryNav">
+        <a href="#menu">Menu tygodnia</a>
+        <a href="#klasyki">Klasyki</a>
+        <a href="#onas">O nas</a>
+        <a href="#kontakt">Kontakt</a>
+        <a class="cta" href="tel:+48666083363">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Zadzwoń i zamów
+        </a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ── MOBILE MENU ── -->
+<div id="mobMenu" class="mob-menu" aria-hidden="true" role="dialog" aria-label="Nawigacja">
+  <div class="mob-backdrop" id="mobBackdrop"></div>
+  <div class="mob-panel">
+    <a href="#menu"    class="mob-link">Menu tygodnia</a>
+    <a href="#klasyki" class="mob-link">Klasyki</a>
+    <a href="#onas"    class="mob-link">O nas</a>
+    <a href="#kontakt" class="mob-link">Kontakt</a>
+    <a href="tel:+48666083363" class="mob-link mob-tel">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      Zadzwoń i zamów
+    </a>
+  </div>
+</div>
+
+<main id="top">
+
+  <!-- ── HERO ── -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <span class="eyebrow">JADŁODAJNIA RODZINNA</span>
+          <h1>
+            Jak u&nbsp;mamy,<br />
+            tylko w&nbsp;mieście.
+            <span class="light">Domowe obiady w&nbsp;Zielonej Górze</span>
+          </h1>
+          <p class="lede">
+            To miejsce powstało z ogromu serca i marzeń. Znajdziesz tu domowe, polskie obiady — takie, które kojarzą się z ciepłem i domem. Codziennie świeże, zawsze z sercem.
+          </p>
+
+          <div class="hours-card">
+            <div class="left">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              Otwarte
+            </div>
+            <div class="right">
+              <span class="days">Poniedziałek – Piątek</span>
+              <span class="time">12:00 – 17:00</span>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#menu">
+              Zobacz menu tygodnia
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="tel:+48666083363">Zadzwoń i&nbsp;zamów</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-photo">
+            <img class ="photo-slot" src="assets/hero.jpg" alt="Bistro Family" />
+            <div class="photo-slot"></div>
+          </div>
+          <div class="hero-badge">
+            <div>
+              <div class="b b1">Świeże</div>
+              <div class="b b2">codziennie<br />gotowane</div>
+            </div>
+          </div>
+          <div class="hero-tape">
+            <div class="dot">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6"/><path d="M5 8c0 4 3 6 7 6s7-2 7-6"/><path d="M5 14h14l-1 8H6z"/></svg>
+            </div>
+            <div class="t">
+              Dzisiejsza zupa
+              <b id="todaySoup">Ładowanie…</b>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── WEEKLY MENU ── -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow">Co dziś mamy</div>
+        <h2 class="section-title">Menu tygodnia</h2>
+        <p class="section-sub">Codziennie dwa dania główne do&nbsp;wyboru, zupa i&nbsp;stałe klasyki — a&nbsp;do tego kompocik z&nbsp;rabarbaru. W&nbsp;środę zabieramy Was w&nbsp;podróż po&nbsp;kuchniach świata.</p>
+      </div>
+
+      <div class="day-tabs" id="dayTabs" role="tablist">
+        <!-- wypełniane przez JS na podstawie WEEK z menu.js -->
+      </div>
+
+      <div class="menu-card" id="menuCard">
+        <!-- wypełniane przez JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CLASSICS ── -->
+  <section id="klasyki">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow">Zawsze na karcie</div>
+        <h2 class="section-title">Klasyki domu</h2>
+        <p class="section-sub">Cztery dania, które gotujemy codziennie — bo bez nich obiad to nie obiad.</p>
+      </div>
+
+      <div class="classics-grid">
+
+        <div class="classic-card">
+          <div class="icon-wrap">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8 36c0-12 10-22 24-22s24 10 24 22-24 18-24 18S8 48 8 36z"/>
+              <path d="M14 36c2-2 4-2 6 0s4 2 6 0 4-2 6 0 4 2 6 0 4-2 6 0 4 2 6 0"/>
+            </svg>
+          </div>
+          <div class="name">Pierogi ruskie</div>
+          <div class="desc">Lepione ręcznie, z&nbsp;twarogiem i&nbsp;ziemniakiem, podsmażane na&nbsp;maśle</div>
+          <div class="price">15 zł</div>
+        </div>
+
+        <div class="classic-card">
+          <div class="icon-wrap">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 24h40v22a8 8 0 0 1-8 8H20a8 8 0 0 1-8-8z"/>
+              <path d="M8 24h48"/>
+              <path d="M22 18c0-3 2-5 5-5"/>
+              <path d="M32 16c0-3 2-5 5-5"/>
+              <path d="M42 18c0-3 2-5 5-5"/>
+            </svg>
+          </div>
+          <div class="name">Bigos staropolski</div>
+          <div class="desc">Duszony z&nbsp;dwóch kapust z&nbsp;mięsem i&nbsp;suszoną śliwką</div>
+          <div class="price">16 zł</div>
+        </div>
+
+        <div class="classic-card">
+          <div class="icon-wrap">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M10 22h44a4 4 0 0 1 4 4v0a4 4 0 0 1-4 4H10a4 4 0 0 1-4-4v0a4 4 0 0 1 4-4z"/>
+              <path d="M14 30v18c0 4 4 6 8 6h20c4 0 8-2 8-6V30"/>
+              <path d="M22 30c0 8 4 14 10 14"/>
+              <path d="M34 30c0 8 4 14 10 14"/>
+            </svg>
+          </div>
+          <div class="name">Łazanki</div>
+          <div class="desc">Z&nbsp;kapustą i&nbsp;wędzonym boczkiem, jak robiła babcia</div>
+          <div class="price">15 zł</div>
+        </div>
+
+        <div class="classic-card">
+          <div class="icon-wrap">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 14h32l-4 38a6 6 0 0 1-6 6H26a6 6 0 0 1-6-6z"/>
+              <path d="M18 28c4 2 8-2 12 0s8-2 12 0"/>
+              <circle cx="26" cy="22" r="2"/>
+              <circle cx="36" cy="20" r="2"/>
+              <circle cx="40" cy="26" r="2"/>
+            </svg>
+          </div>
+          <div class="name">Kompot z rabarbaru</div>
+          <div class="desc">Sygnatura domu — gotowany rano, studzi się w&nbsp;dzbanku na&nbsp;ladzie</div>
+          <div class="price">5 zł</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section class="about-section" id="onas">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="photo">
+            <img class="photo-slot" src="assets/about.jpg" alt="Bistro Family" />
+            <div class="photo-slot"></div>
+          </div>
+          <div class="about-stamp">
+            <div>
+              <div class="n">Nowo<br />otwarte!</div>
+              <div class="l">wpadnij<br />na obiad</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text">
+          <div class="section-eyebrow">O nas</div>
+          <h2>Powstaliśmy<br />z&nbsp;marzenia.</h2>
+          <p>Po&nbsp;latach planów i&nbsp;pracy w&nbsp;końcu otwieramy miejsce, które jest czymś więcej niż tylko jedzeniem. To&nbsp;kawałek naszego życia, pasji i&nbsp;historii — Bistro Family. Znajdziesz tu domowe, polskie obiady, takie które sami kochamy i&nbsp;które zawsze kojarzą się z&nbsp;ciepłem i&nbsp;domem.</p>
+          <p>To miejsce tworzymy po&nbsp;swoiemu, z&nbsp;nutą tego, co kochamy: <b>antyczne akcenty</b>, <b>pasja do&nbsp;żużla</b>, domowe przetwory i&nbsp;detale, które mają znaczenie. A&nbsp;w&nbsp;każdą środę zabieramy Was w&nbsp;podróż — kuchnia świata w&nbsp;naszym wydaniu.</p>
+          <p class="about-teaser">Wkrótce: <b style="color:var(--brick)">ciasto dnia</b> przygotowywane z&nbsp;sercem przez naszą mistrzynię słodkości. 🍰</p>
+          <div class="quote">
+            „Bistro Family to nie tylko nazwa. To&nbsp;rodzina, tradycja i&nbsp;klimat, do&nbsp;którego chce się wracać."
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="kontakt">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow">Wpadnij na obiad</div>
+        <h2 class="section-title">Kontakt</h2>
+        <p class="section-sub">Na miejscu lub na wynos — zadzwoń i zamów, albo wpadnij i zjedz z nami.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Znajdź nas</h3>
+
+          <div class="info-line">
+            <div class="ic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <div class="label">Adres</div>
+              <div class="val">ul. Stefana Wyszyńskiego 18<small>65-536 Zielona Góra · pasaż E.&nbsp;Leclerc</small></div>
+            </div>
+          </div>
+
+          <div class="info-line">
+            <div class="ic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <div class="label">Telefon</div>
+              <a class="val" href="tel:+48666083363">+48 666 083 363<small>Zamówienia na&nbsp;miejscu i&nbsp;na&nbsp;wynos</small></a>
+            </div>
+          </div>
+
+          <div class="info-line">
+            <div class="ic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            </div>
+            <div>
+              <div class="label">Godziny otwarcia</div>
+              <div class="val">Poniedziałek – Piątek<small>12:00 – 17:00 · w&nbsp;weekendy odpoczywamy</small></div>
+            </div>
+          </div>
+
+          <p class="socials-label">Śledź nas w social mediach</p>
+          <div class="socials">
+            <a href="https://www.instagram.com/bistrofamily26/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61572364266269&locale=pl_PL" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V7.5c0-1.2.4-2 2.1-2H17V2.2C16.7 2.1 15.5 2 14.2 2 11.5 2 9.7 3.7 9.7 6.7V10H7v4h2.7v8z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="map-wrap" aria-label="Mapa lokalizacji">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2460.2091746811243!2d15.487581077213797!3d51.93013807191256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4706115bff92f74d%3A0x90b560c05fbe1373!2sE.%20Leclerc!5e0!3m2!1spl!2spl!4v1779129716005!5m2!1spl!2spl"
+            title="Lokalizacja Bistro Family"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ── FOOTER ── -->
+<footer class="site">
+  <div class="container foot">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <img src="assets/logo.jpg" alt="" />
+          <div class="t">bistro family<small>Domowe obiady · Zielona Góra</small></div>
+        </div>
+        <p>Małe miejsce w&nbsp;pasażu E.&nbsp;Leclerc, gdzie obiad smakuje jak u&nbsp;mamy. Gotujemy codziennie świeżo, z&nbsp;polskich, sezonowych składników.</p>
+        <div class="foot-socials">
+          <a href="https://www.instagram.com/bistrofamily26/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61572364266269&locale=pl_PL" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V7.5c0-1.2.4-2 2.1-2H17V2.2C16.7 2.1 15.5 2 14.2 2 11.5 2 9.7 3.7 9.7 6.7V10H7v4h2.7v8z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul>
+          <li>ul. Stefana Wyszyńskiego 18</li>
+          <li>65-536 Zielona Góra</li>
+          <li>pasaż E.&nbsp;Leclerc</li>
+          <li class="foot-contact-tel"><a href="tel:+48666083363">+48 666 083 363</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Godziny</h4>
+        <ul>
+          <li>Poniedziałek &nbsp;12:00–17:00</li>
+          <li>Wtorek &nbsp;12:00–17:00</li>
+          <li>Środa &nbsp;12:00–17:00</li>
+          <li>Czwartek &nbsp;12:00–17:00</li>
+          <li>Piątek &nbsp;12:00–17:00</li>
+          <li class="foot-hours-closed">Sobota – Niedziela &nbsp;zamknięte</li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">
+      <span>© 2026 Bistro Family · Wszystkie prawa zastrzeżone</span>
+      <span>Smacznego!</span>
+    </div>
+  </div>
+</footer>
+
+<script src="menu.js"></script>
+<script>
+  function renderDay(i) {
+    const d = WEEK[i];
+
+    // day tabs
+    document.querySelectorAll('.day-tab').forEach((t, idx) => {
+      t.classList.toggle('active', idx === i);
+    });
+
+    // menu card
+    document.getElementById('menuCard').innerHTML = `
+      <div class="menu-day-head">
+        <div class="name">${d.name}<span class="date">&nbsp;${d.date}</span></div>
+        ${d.theme ? `<div class="theme">— ${d.theme} —</div>` : ''}
+      </div>
+      <div class="menu-block-title">Dania obiadowe</div>
+      ${d.mains.map(m => `
+        <div class="dish">
+          <span class="name">${m.country ? `<span class="dish-country">${m.country}</span>` : ''}${m.name}</span>
+          <span class="dots"></span>
+          <span class="price">${m.price}</span>
+        </div>
+      `).join('')}
+      <div class="dish soup">
+        <span class="name">${d.soup.name}</span>
+        <span class="price">${d.soup.price}</span>
+      </div>
+      <div class="menu-foot">
+        Zamówienia można składać na&nbsp;miejscu oraz na&nbsp;wynos · <b>+48 666 083 363</b>
+      </div>
+    `;
+  }
+
+  // 0 = Sun, 1 = Mon … 6 = Sat → map Mon–Fri to 0–4
+  function todayIndex() {
+    const d = new Date().getDay();
+    return (d >= 1 && d <= 5) ? d - 1 : 0;
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const ti = todayIndex();
+    const tabsEl = document.getElementById('dayTabs');
+
+    // build tabs dynamically from menu data
+    WEEK.forEach((day, i) => {
+      const btn = document.createElement('button');
+      btn.className = 'day-tab' + (i === ti ? ' is-today' : '');
+      btn.setAttribute('role', 'tab');
+      btn.dataset.day = i;
+      btn.innerHTML = `
+        <span>${day.name}</span>
+        <span class="tab-date">${day.date}</span>
+        <span class="tab-today">DZIŚ</span>
+      `;
+      btn.addEventListener('click', () => renderDay(i));
+      tabsEl.appendChild(btn);
+    });
+
+    renderDay(ti);
+
+    // hero tape: today's soup
+    const soupEl = document.getElementById('todaySoup');
+    if (soupEl) {
+      const s = WEEK[ti].soup;
+      soupEl.textContent = `${s.name} · ${s.price}`;
+    }
+
+    // hamburger / mobile menu
+    const ham      = document.getElementById('hamburger');
+    const mobMenu  = document.getElementById('mobMenu');
+    const mobBack  = document.getElementById('mobBackdrop');
+    const CLOSE_MS = 280;
+
+    function openMobMenu() {
+      mobMenu.classList.add('open');
+      mobMenu.setAttribute('aria-hidden', 'false');
+      ham.classList.add('open');
+      ham.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMobMenu() {
+      mobMenu.classList.add('closing');
+      ham.classList.remove('open');
+      ham.setAttribute('aria-expanded', 'false');
+      setTimeout(() => {
+        mobMenu.classList.remove('open', 'closing');
+        mobMenu.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      }, CLOSE_MS);
+    }
+
+    ham.addEventListener('click', () =>
+      mobMenu.classList.contains('open') ? closeMobMenu() : openMobMenu()
+    );
+    mobBack.addEventListener('click', closeMobMenu);
+    mobMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMobMenu));
+
+    // smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const id = a.getAttribute('href');
+        if (id.length > 1) {
+          const el = document.querySelector(id);
+          if (el) {
+            e.preventDefault();
+            window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 70, behavior: 'smooth' });
+          }
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
